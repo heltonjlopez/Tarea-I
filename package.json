@@ -1,0 +1,21 @@
+{
+  "name": "pwii-node",
+  "version": "1.0.0",
+  "description": "Aprendiendo Node PWII",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "node index.js",
+    "documentar": "echo \"detuvimos el programa\""
+  },
+  "keywords": [
+    "Aprendiendo",
+    "Node"
+  ],
+  "author": "heltonjlopez",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^11.3.1"
+  }
+}
