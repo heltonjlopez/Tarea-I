@@ -54,6 +54,7 @@ console.log(persona1.calcularEdad())
 //console.log(persona1)
 //console.log(persona2)
 
+let = nombre = '';
 
 //Intentar calcular la edad a partir de la fecha de nacimiento
 
