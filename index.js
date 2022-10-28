@@ -9,13 +9,13 @@ class Persona{
     nombre
     apellido
 
-    constructor(id, nombre, apellido, fechaNacimiento){
+    constructor(id, nombre, apellido, fechaNac){
         //logica de instanciación
         this.id = id
         this.nombre = nombre
         this.apellido = apellido
         this.cansancio = 0
-        this.fechaNacimiento = fechaNacimiento
+        this.fechaNacimiento = fechaNac
         this.fechaCreacion = new Date()
         this.informacionCompleta = `${this.nombre} - ${this.apellido} - Fecha de nacimiento: ${this.fechaNacimiento}` 
         this.calcularEdad()
