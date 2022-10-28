@@ -40,33 +40,20 @@ class Persona{
     }
 }
 
-var persona1 = new Persona(1, "Luke", "Skywalker", new Date(2005, 9, 24)) // el mes es indexado como 0
-var persona2 = new Persona(2, "Leia", "Skywalker", new Date(2010, 0, 10))
+var persona1 = new Persona(1, "Luke", "Skywalker", new Date(2005, 9, 24));
+var persona2 = new Persona(2, "Leia", "Skywalker", new Date(2010, 0, 10));
 
-
-//Edad
-//console.log(persona1.calcularEdad())
-//persona1.fechaNacimiento = new Date(2006, 9, 24)
-//console.log(persona1.calcularEdad())
-//persona1.fechaNacimiento = new Date(2010, 0, 10)
-//console.log(persona1.calcularEdad())
 
 //Cansancio
-console.log(persona1.cansancio)
+console.log(persona1.cansancio);
 
-persona1.caminar(10)
-console.log(persona1.cansancio)
+persona1.caminar(10);
+console.log(persona1.cansancio);
 
-persona1.dormir(8)
-console.log(persona1.cansancio)
+persona1.dormir(8);
+console.log(persona1.cansancio);
 
-console.log(round(e, 3))
-//console.log(mathjs.log)
-
-//persona1.caminar(15)
-//console.log(persona1)
-//console.log(persona2)
-
+console.log(round(e, 3));
 
 //Intentar calcular la edad a partir de la fecha de nacimiento
 
