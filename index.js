@@ -4,7 +4,7 @@ var { atan2, chain, derivative, e, evaluate, log, pi, pow, round, sqrt } = requi
 //var mathjs = require('mathjs')
 
 //Clases
-class Person{
+class Persona{
     id
     nombre
     apellido
