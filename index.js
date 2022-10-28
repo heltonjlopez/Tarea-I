@@ -3,20 +3,27 @@ var config = require('./configuracion')
 var { atan2, chain, derivative, e, evaluate, log, pi, pow, round, sqrt } = require('mathjs')
 //var mathjs = require('mathjs')
 
-class superHero{
-    constructor(id, nombre, gen, fechaNac){
+//Clases
+class Persona{
+    id
+    nombre
+    apellido
+
+    constructor(id, nombre, apellido, gen, fechaNacimiento){
+        //logica de instanciación
         this.id = id
         this.nombre = nombre
-        this.cansancio = 0
+        this.apellido = apellido
         this.genero = gen
-        this.fechaNacimiento = fechaNac
+        this.cansancio = 0
+        this.fechaNacimiento = fechaNacimiento
         this.fechaCreacion = new Date()
-        this.informacionCompleta = `${this.nombre} nacio el: ${this.fechaNacimiento}` 
+        this.informacionCompleta = `${this.nombre} - ${this.apellido} - Fecha de nacimiento: ${this.fechaNacimiento}` 
         this.calcularEdad()
     }
 
     calcularEdad(){
-        return (new Date() - this.fechaNacimiento) / 31557600000 //24hr * 3600sgs * 365.25 day * 1000 miliseconds
+        return (new Date() - this.fechaNacimiento) / 31557600000 //24 * 3600 * 365.25 * 1000
     }
 
     caminar(kilometrosCaminados){
@@ -34,5 +41,29 @@ class superHero{
     }
 }
 
-var sHero1 = new superHero(1, "Iron Man", 'M',  new Date(1965, 3, 4)) ;
-var sHero2 = new superHero(2, "Black Widow", 'F',new Date(1984, 10, 22));
+var persona1 = new Persona(1, "Luke", "Skywalker", 'M', new Date(2005, 9, 24)) 
+var persona2 = new Persona(2, "Leia", "Skywalker", 'F', new Date(2010, 0, 10))
+
+
+//Edad
+//console.log(persona1.calcularEdad())
+//persona1.fechaNacimiento = new Date(2006, 9, 24)
+//console.log(persona1.calcularEdad())
+//persona1.fechaNacimiento = new Date(2010, 0, 10)
+//console.log(persona1.calcularEdad())
+
+//Cansancio
+console.log(persona1.cansancio)
+
+persona1.caminar(15)
+console.log(persona1.cansancio)
+
+persona1.dormir(10)
+console.log(persona1.cansancio)
+
+console.log(round(e, 3))
+//console.log(mathjs.log)
+
+//persona1.caminar(15)
+//console.log(persona1)
+//console.log(persona2)
